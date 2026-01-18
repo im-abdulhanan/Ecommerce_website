@@ -7,20 +7,25 @@ nav > img{
 nav > .ul_div{
     width: 30%;
     height: 80vh;
-    background-color: aquamarine;
+    background-color: black;
     position: relative;
     top: 304px;
-    left: 115px;
+    right: 350px;
     z-index: 2;
-    display: none;
+    transition: 1s all ease;
+    /* display: none; */
 }
 nav > .ul_div > ul{
-    display: block;
     /* background-color: blueviolet; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: none;
 }
+nav > .ul_div > ul > li >a{
+    color: orange;
+}
+
 nav > .cart{
     display: none;
 }
@@ -36,8 +41,14 @@ nav > .menu_label > img.menu_close{
     /* display: block; */
     width: 25px;
 }
-#check:checked ~.ul_div{
+#check:checked ~ .ul_div > ul{
     display: flex;
+}
+
+#check:checked ~ .ul_div{
+    display: flex;
+    right: 207px;
+    transition: 1s all ease;
 }
 }
 
