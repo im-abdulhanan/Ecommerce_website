@@ -10,14 +10,13 @@
     <title>TasteNest</title>
 
 </head>
-<body>
+<body class="light_mode">
     <header>
         <nav>
+            <input type="checkbox" class="menu_input" id="menu_check">
             <div class="menu_input_label_div">
-                <input type="checkbox" class="menu_input" id="menu_check">
                 <label for="menu_check" class="menu_label">
-                    <img src="icons/menu_icon.png" alt="" width="25px" class="menu_open">
-                    <img src="icons/close_icon.png" alt="" width="25px" class="menu_close">
+                    <img src="icons/menu_icon.png" alt="" width="30px" class="menu_open">
                 </label>
             </div>
             <div class="nav_logo">
@@ -25,10 +24,18 @@
             </div>
             <div class="ul_div">
                 <ul>
+                    <li>
+                     <label for="menu_check">
+                            <img src="icons/close_icon.png" alt="" width="25px" class="menu_close">
+                    </label></li>
                     <li><a href="">Home</a></li>
                     <li><a href="">Shop</a></li>
                     <li><a href="">Order</a></li>
                     <li><a href="">Blog</a></li>
+                    <li class="list"><a href="">Check Location</a></li>
+                    <li class="list"><a href="">Track Order</a></li>
+                    <li class="list"><a href="">Check Menu</a></li>
+                    <li class="list"><a href="">Feed Back</a></li>
                 </ul>
             </div>
             <div class="login_cart_div">
@@ -38,17 +45,20 @@
             <div class="dark_light_mode_div">
                 <input type="checkbox" id="dark_light" class="dark_light_input">
                 <label for="dark_light" class="darklight_label">
-                    <img src="icons/night-mode.png" alt="" class="dark_icon">
-                    <img src="icons/light-mode.png" alt="" class="light_icon">
+                    <img src="icons/night-mode.png" alt="" onclick="changeMode()" class="dark_icon">
+                    <img src="icons/light-mode.png" alt="" onclick="changeMode()" class="light_icon">
                 </label>
             </div>
         </nav>
     </header>
     <main>
         <div class="hero_section">
-            <div class="hero_section_banner">
-                <img src="icons/arrow_left.png" width="30" alt="" class="left_arrow">
-                <img src="icons/arrow-right.png" width="30"  alt="" class="right_arrow">
+            <div id="banner_div" class="hero_section_banner">
+                <img src="icons/arrow_left.png" width="30" onclick="bannerChange()" alt="" class="left_arrow">
+                <div class="order_div">
+                    <a href="" class="order_btn">ORDER NOW !</a>
+                </div>
+                <img src="icons/arrow-right.png" width="30" onclick="bannerChange()"  alt="" class="right_arrow">
             </div>
         </div>
     </main>
