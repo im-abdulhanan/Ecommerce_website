@@ -25,6 +25,15 @@ leftArrow === null || leftArrow === void 0 ? void 0 : leftArrow.addEventListener
     bannerDiv.style.background = "url(".concat(bannerImages[bannerIndex], ")");
     bannerDiv.style.backgroundSize = "cover";
 });
+setInterval(function () {
+    bannerDiv.style.background = "url(".concat(bannerImages[bannerIndex], ")");
+    bannerIndex++;
+    bannerDiv.style.backgroundSize = "cover";
+    if (bannerIndex === bannerImages.length) {
+        bannerIndex = 0;
+        bannerDiv.style.backgroundSize = "cover";
+    }
+}, 2000);
 var cardDiv = document.getElementById("cardDisplay");
 var products = [
     {
@@ -32,13 +41,13 @@ var products = [
         mainImg: "./1Headphones/headphone2.jpg",
         title: "Apple Wireless Headphones",
         stars: [
-            "./icons/fill_start.png",
-            "./icons/fill_start.png",
-            "./icons/fill_start.png",
-            "./icons/fill_start.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
             "./icons/empty_star.png",
         ],
-        sold: 100,
+        sold: 123,
         price: 199,
     },
     {
@@ -46,14 +55,98 @@ var products = [
         mainImg: "./2protine /ptnOne.jpeg",
         title: "Nitro Teach Supplement",
         stars: [
-            "./icons/fill_start.png",
-            "./icons/fill_start.png",
-            "./icons/fill_start.png",
-            "./icons/fill_start.png",
-            "./icons/half_star.png"
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/half_star.png",
         ],
-        sold: 100,
+        sold: 370,
         price: 999,
+    },
+    {
+        id: 3,
+        mainImg: "./4watches/watch1.jpg",
+        title: "Black Golden Watch",
+        stars: [
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/half_star.png",
+        ],
+        sold: 260,
+        price: 199,
+    },
+    {
+        id: 4,
+        mainImg: "./3sports shirts/shirtFive.webp",
+        title: "GYM Sports T-Shirt",
+        stars: [
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+        ],
+        sold: 890,
+        price: 59,
+    },
+    {
+        id: 5,
+        mainImg: "./2protine /ptnTwo.jpeg",
+        title: "Rock Nitro Supplement",
+        stars: [
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/empty_star.png",
+        ],
+        sold: 573,
+        price: 899,
+    },
+    {
+        id: 6,
+        mainImg: "./3sports shirts/shirtThree.webp",
+        title: "GYM Sport T-Shirt",
+        stars: [
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+        ],
+        sold: 953,
+        price: 49,
+    },
+    {
+        id: 7,
+        mainImg: "./5sports_shoes/one.png",
+        title: "Nike Sports Shoes",
+        stars: [
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/half_star.png",
+        ],
+        sold: 1153,
+        price: 299,
+    },
+    {
+        id: 8,
+        mainImg: "./1Headphones/headphone1.jpg",
+        title: "Apple Warless Headphones",
+        stars: [
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/fill_star.png",
+            "./icons/empty_star.png",
+        ],
+        sold: 953,
+        price: 159,
     },
 ];
 products.forEach(function (item) {

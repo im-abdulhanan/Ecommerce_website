@@ -89,6 +89,7 @@ nav .loginDiv img {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  padding: 40px ;
   /* background-color: lightcoral; */
 }
 .bannerDiv {
@@ -110,16 +111,19 @@ nav .loginDiv img {
   transform: rotate(-180deg);
 }
 #cardDisplay {
-  width: 80%;
+  width: 90%;
   height: 100%;
   border: 1px solid;
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 20px;
   padding: 10px 10px;
 }
 
 /* Cards */
 .cardBox {
-  width: 25%;
+  width: 37vh;
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -165,6 +169,8 @@ h3 {
 .sold{
   color: gray;
   padding-left: 10px;
+  font-family: "fontTwo";
+  font-size: 13px;
 }
 .starsImg{
   width: 4%;
