@@ -5,51 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AH's Store</title>
     <link rel="stylesheet" href="style.css" />
-    <script async src="script.js"></script>
   </head>
   <body>
     <header>
       <nav>
-        <div class="logoDiv">
-          <strong>AH STORE</strong>
-        </div>
-        <div class="ulDiv">
+        <div class="logoDiv"><strong>AH STORE</strong></div>
+        <div class="ul_Div">
           <ul>
             <li><a href="">HOME</a></li>
-            <li><a href="">PRODUCTS</a></li>
-            <li><a href="">SHOP</a></li>
             <li><a href="">SELL</a></li>
+            <li><a href="">BUY</a></li>
+            <li><a href="">FAQ</a></li>
           </ul>
         </div>
         <div class="cartDiv">
-          <img
-            src="icons/shopping_cart.png"
-            alt=""
-            id="cartIcon"
-            class="cartIcon"
-          />
-          <span id="cartCounts" class="cartCount">0</span>
+          <img src="./icons/shopping_cart.png" alt="" id="cartIcon" />
+          <span>0</span>
         </div>
         <div class="loginDiv">
-          <img
-            src="icons/loginIcon.png"
-            title="Login"
-            id="loginIcon"
-            class="loginIcon"
-          />
+          <a href="">LOGIN</a>
         </div>
       </nav>
     </header>
-    <main>
-        <div class="heroDiv">
-            <div id="bannerDiv" class="bannerDiv">
-                <img src="icons/arrow.png" alt="" id="rightArrow" class="rightArrow">
-                <img src="icons/arrow.png" alt="" id="lightArrow" class="lightArrow">
-            </div><!--bannerDiv end-->
-            <div id="cardDisplay">
-              
-            </div><!--suggestionDiv end-->
-        </div><!--heroDiv end-->
-    </main>
+    <aside>
+      <div class="searchDiv">
+        <img src="./icons/search.png" title="Search" id="searchIcon" />
+        <input type="search" id="searchInput" placeholder="Search category" />
+      </div>
+      <div class="selectProduct">
+        <select name="" id="select">
+          <option value="select" selected>SELECT CATEGORY</option>
+          <option value="ALL">ALL</option>
+          <option value="FASHION">FASHION</option>
+          <option value="SUPPLEMENT">SUPPLEMENT</option>
+          <option value="ELECTRONIC">ELECTRONIC</option>
+          <option value="MOBILE">MOBILE ACCESSORIES</option>
+        </select>
+      </div>
+    </aside>
+    <main></main>
+    <footer></footer>
   </body>
 </html>

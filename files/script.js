@@ -1,9 +1,9 @@
 var bannerImages = [
-    "banner/bannerOne.jpg",
-    "banner/bannerTwo.jpg",
-    "banner/bannerThree.jpg",
-    "banner/bannerFour.jpg",
-    "banner/bannerFive.jpg",
+    "./pics/banner/bannerOne.jpg",
+    "./pics/banner/bannerTwo.jpg",
+    "./pics/banner/bannerThree.jpg",
+    "./pics/banner/bannerFour.jpg",
+    "./pics/banner/bannerFive.jpg",
 ];
 var bannerIndex = 0;
 var bannerDiv = document.getElementById("bannerDiv");
@@ -38,7 +38,7 @@ var cardDiv = document.getElementById("cardDisplay");
 var products = [
     {
         id: 1,
-        mainImg: "./1Headphones/headphone2.jpg",
+        mainImg: "./pics/1-Headphones/headphone2.jpg",
         title: "Apple Wireless Headphones",
         stars: [
             "./icons/fill_star.png",
@@ -52,7 +52,7 @@ var products = [
     },
     {
         id: 2,
-        mainImg: "./2protine /ptnOne.jpeg",
+        mainImg: "./pics/2-protine /ptnOne.jpeg",
         title: "Nitro Teach Supplement",
         stars: [
             "./icons/fill_star.png",
@@ -66,7 +66,7 @@ var products = [
     },
     {
         id: 3,
-        mainImg: "./4watches/watch1.jpg",
+        mainImg: "./pics/4-watches/watch1.jpg",
         title: "Black Golden Watch",
         stars: [
             "./icons/fill_star.png",
@@ -80,7 +80,7 @@ var products = [
     },
     {
         id: 4,
-        mainImg: "./3sports shirts/shirtFive.webp",
+        mainImg: "./pics/3-sports shirts/shirtFive.webp",
         title: "GYM Sports T-Shirt",
         stars: [
             "./icons/fill_star.png",
@@ -94,7 +94,7 @@ var products = [
     },
     {
         id: 5,
-        mainImg: "./2protine /ptnTwo.jpeg",
+        mainImg: "./pics/2-protine /ptnTwo.jpeg",
         title: "Rock Nitro Supplement",
         stars: [
             "./icons/fill_star.png",
@@ -108,7 +108,7 @@ var products = [
     },
     {
         id: 6,
-        mainImg: "./3sports shirts/shirtThree.webp",
+        mainImg: "./pics/3-sports shirts/shirtThree.webp",
         title: "GYM Sport T-Shirt",
         stars: [
             "./icons/fill_star.png",
@@ -122,7 +122,7 @@ var products = [
     },
     {
         id: 7,
-        mainImg: "./5sports_shoes/one.png",
+        mainImg: "./pics/5-sports_shoes/one.png",
         title: "Nike Sports Shoes",
         stars: [
             "./icons/fill_star.png",
@@ -136,7 +136,7 @@ var products = [
     },
     {
         id: 8,
-        mainImg: "./1Headphones/headphone1.jpg",
+        mainImg: "./pics/1-Headphones/headphone1.jpg",
         title: "Apple Warless Headphones",
         stars: [
             "./icons/fill_star.png",
@@ -150,7 +150,7 @@ var products = [
     },
     {
         id: 9,
-        mainImg: "./6sports shirts 2/shirtOne.webp",
+        mainImg: "./pics/6-sports shirts 2/shirtOne.webp",
         title: "Black Spider GYM t-shirt",
         stars: [
             "./icons/fill_star.png",
@@ -164,7 +164,7 @@ var products = [
     },
     {
         id: 10,
-        mainImg: "./4watches/watch3.jpg",
+        mainImg: "./pics/4-watches/watch3.jpg",
         title: "Black Watch for Men",
         stars: [
             "./icons/fill_star.png",
@@ -178,7 +178,7 @@ var products = [
     },
     {
         id: 11,
-        mainImg: "./10iphonecase/caseOne.webp",
+        mainImg: "./pics/10-iphonecase/caseOne.webp",
         title: "Iphone cover case",
         stars: [
             "./icons/fill_star.png",
@@ -192,7 +192,7 @@ var products = [
     },
     {
         id: 12,
-        mainImg: "./9halfpait/paintTwo.webp",
+        mainImg: "./pics/9-halfpait/paintTwo.webp",
         title: "Boxing Half paint",
         stars: [
             "./icons/fill_star.png",

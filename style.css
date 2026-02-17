@@ -2,197 +2,128 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "poppins";
 }
 @font-face {
-  font-family: "Bungee";
-  src: url(Fonts/Bungee/Bungee-Regular.ttf) format("truetype");
+  font-family: "bigFont";
+  src: url(./Fonts/Bungee/Bungee-Regular.ttf), format(ttf);
 }
 @font-face {
-  font-family: "fontTwo";
-  src: url(Fonts/Poppins/Poppins-Medium.ttf) format("truetype");
+  font-family: "poppins";
+  src: url(./Fonts/Poppins/Poppins-Medium.ttf);
 }
-nav {
+body {
   width: 100%;
-  height: 8vh;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+header {
+  grid-column: 1/3;
+  height: 10vh;
+}
+header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(145, 0, 48);
-}
-
-nav .logoDiv strong {
-  color: white;
-  font-family: "Bungee";
-  font-size: 250%;
-  cursor: pointer;
-}
-nav .ulDiv {
-  width: 30%;
-  height: 50%;
-}
-nav .ulDiv ul {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background-color:rgb(133, 26, 44);
 }
-nav .ulDiv ul li {
-  list-style: none;
+header nav .logoDiv strong {
+  font-family: "bigFont";
+  font-size: 300%;
 }
-nav .ulDiv ul li a {
-  font-family: "fontTwo";
-  color: white;
-  text-decoration: none;
-  font-size: 120%;
-  padding: 10px 20px;
-}
-nav .ulDiv ul li a:hover {
-  background-color: white;
-  color: rgb(145, 0, 48);
-  border-radius: 5px;
-}
-
-nav .cartDiv {
-  background-color: white;
-  width: 5%;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-  border-radius: 8px;
-}
-nav .cartDiv img {
-  width: 30px;
-  cursor: pointer;
-}
-nav .cartDiv span {
-  background-color: rgb(145, 0, 48);
+header nav .ul_Div {
   width: 20%;
-  height: 50%;
-  text-align: center;
-  border-radius: 50%;
-  color: white;
-  font-family: "fontTwo";
 }
-nav .loginDiv img {
-  width: 80%;
-  cursor: pointer;
-}
-
-/* MAIN SECTION */
-.heroDiv {
-  width: 100%;
-  height: 100%;
+header nav .ul_Div ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  padding: 40px ;
-  /* background-color: lightcoral; */
-}
-.bannerDiv {
-  width: 70%;
-  height: 50vh;
-  /* border: 1px solid; */
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  background-image: url(banner/bannerOne.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
-.bannerDiv img {
-  width: 30px;
-  cursor: pointer;
+header nav .ul_Div ul li,
+a {
+  list-style-type: none;
+  text-decoration: none;
 }
-.bannerDiv .rightArrow {
-  transform: rotate(-180deg);
-}
-#cardDisplay {
-  width: 80%;
-  height: 100%;
+header nav .ul_Div ul li a {
   /* border: 1px solid; */
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  row-gap: 10px;
-  padding: 10px 10px;
-}
-
-/* Cards */
-.cardBox {
-  width: 37vh;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: 2px 2px 5px;
-  border-radius: 10px;
-  border: 1px solid rgb(160, 160, 160);
-}
-.imgDiv {
-  /* border: 1px solid; */
-  width: 100%;
-  height: 45%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-.imgDiv .mainIMG {
-  width: 60%;
-  /* object-fit: cover; */
-}
-.desDiv {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 0px 10px;
-  /* border: 1px solid; */
-  width: 100%;
-  height: 20%;
-}
-.desDiv h2,
-h3 {
-  font-family: "fontTwo";
-}
-.starDiv {
-  /* border: 1px solid; */
-  width: 100%;
-  padding: 0px 10px;
-  display: flex;
-  align-items: center;
-}
-.sold{
-  color: gray;
-  padding-left: 10px;
-  font-family: "fontTwo";
-  font-size: 13px;
-}
-.starsImg{
-  width: 4%;
-}
-
-.btnCart {
-  /* border: 1px solid; */
-  width: 60%;
-  height: 12%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  font-size: 20px;
+  padding: 10px 25px;
   border-radius: 5px;
-  background-color: rgba(145, 0, 48,0.85);
-  cursor: pointer;
+  color: rgb(255, 255, 255);
 }
-.btnCart:hover{
-  background-color: rgb(145, 0, 48);
+header nav .ul_Div ul li a:hover {
+  background-color: white;
+  color: rgb(133, 26, 44);
 }
-.btnCart .cartBTN {
-  font-family: "fontTwo";
-  font-weight: 900;
-  color: white;
+header nav .cartDiv {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5%;
+  height: 40%;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+header nav .cartDiv img {
+  width: 30px;
+}
+header nav .loginDiv a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  color:white;
+}
+header nav .loginDiv a:hover {
+   background-color: white;
+  color: rgb(133, 26, 44);
+}
+aside {
+    grid-column: 1/2;
+    background-color: rgb(136, 55, 82);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100vh; */
+    padding: 50px 0;
+}
+.searchDiv{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 5vh;
+    background-color: lightgray;
+}
+#searchIcon{
+    cursor: pointer;
+}
+#searchInput{
+    border: none;
+    width: 100%;
+    height: 90%;
+    font-size: 20px;
+}
+.selectProduct{
+    width: 90%;
+    height: 5vh;
+   
+}
+#select,option{
+    padding: 0 10px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    font-size: 20px;
+}
+main {
+}
+footer {
 }
